@@ -82,6 +82,15 @@ export default function Portfolio() {
           <p className="text-lg text-blue-400 animate-pulse">
             ☁️ Cloud & DevOps Engineer | Azure | Terraform | AKS | GitHub Actions
           </p>
+          <a
+            href="/Asmita_A_Kolte_Cloud.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 px-5 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-500 transition"
+          >
+            📄 Download Resume
+          </a>
         </motion.div>
       </header>
 
