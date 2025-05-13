@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.500b4941.css",
+    "main.js": "/portfolio/static/js/main.c82c4c17.js",
+    "static/js/453.232e1304.chunk.js": "/portfolio/static/js/453.232e1304.chunk.js",
+    "static/media/big_data.png": "/portfolio/static/media/big_data.b25e67dd18bd06b09fed.png",
+    "static/media/Budget_Tracker.png": "/portfolio/static/media/Budget_Tracker.16401521d0e6dd9311b8.png",
+    "static/media/asmita.jpg": "/portfolio/static/media/asmita.0d471a1275b73599a69d.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.500b4941.css.map": "/portfolio/static/css/main.500b4941.css.map",
+    "main.c82c4c17.js.map": "/portfolio/static/js/main.c82c4c17.js.map",
+    "453.232e1304.chunk.js.map": "/portfolio/static/js/453.232e1304.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.500b4941.css",
+    "static/js/main.c82c4c17.js"
+  ]
+}
