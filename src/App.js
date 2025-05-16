@@ -4,6 +4,7 @@ import project1 from "./assets/Budget_Tracker.png";
 import project3 from "./assets/kubecron.jpeg"
 import project2 from "./assets/terraform.jpeg"
 import project4 from "./assets/big_data.png"
+import project5 from "./assets/stocks.png"
 import { motion } from "framer-motion";
 import { ArrowUp } from "lucide-react";
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
@@ -52,7 +53,7 @@ export default function Portfolio() {
         transition={{ delay: 0.2, duration: 0.6 }}
       >
         <div className="bg-gray-800 rounded-full px-6 py-2 flex space-x-6 shadow-lg">
-          {["Home", "About", "Skills", "Experience", "Projects"].map((section) => (
+          {["Home", "About", "Skills", "Experience", "Projects","Education"].map((section) => (
             <a
               key={section}
               href={`#${section.toLowerCase()}`}
@@ -83,7 +84,7 @@ export default function Portfolio() {
             ☁️ Cloud & DevOps Engineer | Azure | Terraform | AKS | GitHub Actions
           </p>
           <a
-            href="/Asmita_A_Kolte_Cloud.pdf"
+            href={`${process.env.PUBLIC_URL}/Asmita_A_Kolte_Cloud.pdf`}
             download
             target="_blank"
             rel="noopener noreferrer"
@@ -238,9 +239,25 @@ export default function Portfolio() {
                   </p>
                 </div>
               </motion.a>
-
+              
+              <motion.a 
+                whileHover={{ scale: 1.03 }} 
+                href="https://github.com/asmitaakolte/Real_Time_Stock_Price_ETL" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-800 shadow-md rounded-lg overflow-hidden block transition transform hover:shadow-xl"
+              >
+                <img src={project5} alt="Project 5" className="w-full h-48 object-cover" />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-white">Real-Time Stock Price ETL</h3>
+                  <p className="text-sm text-gray-300">
+                  Real-Time Stock Price ETL Pipeline with Apache Airflow and PostgreSQL.
+                  </p>
+                </div>
+              </motion.a>
             </div>
           </motion.section>
+
 
           {/* Education */}
           <motion.section id="education" className="mb-16" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
